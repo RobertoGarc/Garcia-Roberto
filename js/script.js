@@ -2,10 +2,10 @@ addEventListener("load",()=>{
     
     setTimeout(()=>{
         document.querySelector(".preloader").classList.add("opacity-0");
-    },800);
+    },500);
     setTimeout(()=>{  
         document.querySelector(".preloader").style.display="none";
-    },1200);
+    },1000);
 })
 
 //NAV
