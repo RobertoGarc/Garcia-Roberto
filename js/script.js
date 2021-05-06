@@ -155,7 +155,8 @@ const toggleLightbox=()=>{
 const changeItem=()=>{
     imgSrc=portfolioItems[itemIndex].querySelector(".portfolio-img img").getAttribute("src");
     lightboxImg.src=imgSrc;
-    lightboxText.textContent=portfolioItems[itemIndex].querySelector("h4").textContent;
+    
+    lightboxText.innerHTML=portfolioItems[itemIndex].querySelector("p").innerHTML;
     lightboxCounter.textContent=`${itemIndex+1} / ${portfolioItems.length}`;
     link();
 }
@@ -180,7 +181,7 @@ const link=()=>{
         lightboxImg.style.cursor="pointer";
         lightboxImg.style.transition="0.5s all ease";
         lightboxImg.addEventListener('mouseover',()=>{
-            lightboxImg.style.transform="scale(1.1)";
+            lightboxImg.style.transform="scale(1.05)";
         })
         lightboxImg.addEventListener('mouseleave',()=>{
             lightboxImg.style.transform="scale(1)";

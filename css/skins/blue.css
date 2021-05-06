@@ -12,10 +12,12 @@
 	border-bottom: 4px solid #0d6ff9;	
 }
 
+
 .contact .contact-info-item .icon .fa,
 .blog .blog-item-inner .blog-info .blog-tags a,
 .lightbox .lightbox-controls .prev-item .fa,
 .lightbox .lightbox-controls .next-item .fa,
+.lightbox .lightbox-content .lightbox-caption .caption-text span,
 .portfolio .portfolio-item .portfolio-info .icon .fa,
 .portfolio .portfolio-filter button.active,
 .service .service-item .service-item-inner .icon .fa,
