@@ -1188,7 +1188,7 @@ body.dark .shadow-dark{
 	cursor: pointer;
 }
 
-.style-switcher .toggle-style-switcher{
+.style-switcher .toggle-style-switcher .fa{
 	font-size: 20px;
 	line-height: 45px;
 }
@@ -1365,4 +1365,13 @@ body.dark .shadow-dark{
 		height: 260px;
 	}
 
+
+}
+
+@media (max-width: 324px) {
+	.style-switcher .toggle-style-switcher{
+		left:-46px;
+		top:46px;
+		
+	}
 }
