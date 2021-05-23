@@ -1,17 +1,14 @@
-
-
 /*añade bordes al logo*/
-.aside .logo a::before{ 
-	border-top:4px solid #0d6ff9;
-	border-left:4px solid #0d6ff9;
+.aside .logo a::before {
+  border-top: 10px solid #0d6ff9;
+  border-left: 10px solid #0d6ff9;
 }
 
 /*añade bordes al logo*/
-.aside .logo a::after{
-	border-right: 4px solid #0d6ff9;
-	border-bottom: 4px solid #0d6ff9;	
+.aside .logo a::after {
+  border-right: 10px solid #0d6ff9;
+  border-bottom: 10px solid #0d6ff9;
 }
-
 
 .contact .contact-info-item .icon .fa,
 .blog .blog-item-inner .blog-info .blog-tags a,
@@ -27,8 +24,8 @@
 body.dark .aside .nav li a:hover,
 body.dark .aside .nav li a.active,
 body.dark .portfolio .portfolio-filter button:hover,
-body.dark .portfolio .portfolio-filter button.active{
-	color:#0d6ff9;
+body.dark .portfolio .portfolio-filter button.active {
+  color: #0d6ff9;
 }
 .blog .blog-item-inner .blog-img .blog-date,
 .service .service-item .service-item-inner:hover .icon,
@@ -40,15 +37,14 @@ body.dark .portfolio .portfolio-filter button.active{
 .section-title h2::after,
 .aside .nav-toggler span,
 .aside .nav-toggler span::before,
-.aside .nav-toggler span::after
-{
-	background-color: #0d6ff9; 
+.aside .nav-toggler span::after {
+  background-color: #0d6ff9;
 }
 
-.home .intro .social-links a{
-	background-color: #0d6ff9;
+.home .intro .social-links a {
+  background-color: #0d6ff9;
 }
 
-.portfolio .portfolio-filter button.active{
-	border-color: #0d6ff9;
+.portfolio .portfolio-filter button.active {
+  border-color: #0d6ff9;
 }
