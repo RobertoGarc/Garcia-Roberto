@@ -846,7 +846,7 @@ section .container {
   max-width: 100%;
   max-height: 500px;
   display: block;
-  margin: 40px 0;
+  margin: 30px 0;
 }
 
 .lightbox .lightbox-content {
@@ -883,7 +883,7 @@ section .container {
   position: absolute;
   height: 40px;
   width: 40px;
-  top: 0px;
+  top: -16px;
   right: 0px;
   font-size: 36px;
   text-align: right;
@@ -894,7 +894,7 @@ section .container {
 }
 
 .lightbox .lightbox-content .lightbox-caption {
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -1133,6 +1133,7 @@ body.dark .service .service-item .service-item-inner p,
 body.dark .about .about-content .timeline .timeline-date,
 body.dark .about .about-content .timeline .timeline-text,
 body.dark .about .about-content .personal-info .info-item p span,
+body.dark .about .about-content .skills .skill-item .skill-percent,
 body.dark .about .about-content .about-text p,
 body.dark .home .intro p {
   color: #e9e9e9;
@@ -1330,6 +1331,10 @@ body.dark .shadow-dark {
     max-height: 320px;
     height: 320px;
   }
+
+  .lightbox .lightbox-content .lightbox-caption {
+    position: relative;
+  }
 }
 
 @media (max-width: 376px) {
@@ -1362,5 +1367,12 @@ body.dark .shadow-dark {
   .style-switcher .toggle-style-switcher {
     left: -46px;
     top: 46px;
+  }
+  .about .about-content .timeline {
+    padding: 20px;
+  }
+
+  .about .about-content .timeline .timeline-text {
+    text-align: left;
   }
 }
