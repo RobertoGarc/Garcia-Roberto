@@ -111,6 +111,14 @@ section .container {
   margin-top: 8px;
 }
 
+section .skill-item h4 {
+  color: #302e4d;
+  line-height: 2em;
+  margin-bottom: 0.9em;
+  border-bottom: 1px solid #e8dfec;
+  font-size: 18px;
+}
+
 .row {
   display: -ms-flexbox;
   display: flex;
@@ -838,6 +846,17 @@ section .container {
 .lightbox.open {
   display: -ms-flexbox;
   display: flex;
+}
+
+.lightbox .lightbox-description {
+  background-color: #fff;
+  color: #302e4d;
+  width: 260px;
+  height: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
 }
 
 .lightbox .lightbox-content img {

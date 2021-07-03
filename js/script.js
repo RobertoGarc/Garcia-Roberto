@@ -78,9 +78,10 @@ const asideSectionTogglerBtn=()=>{
 
 const filterContainer=document.getElementById('portfolio-filter');
 const filterBtns=filterContainer.children;
-const portfolioItems=document.querySelectorAll('.portfolio-item');
+let portfolioItems=document.querySelectorAll('.portfolio-item.show');
 
 console.log(portfolioItems.length);
+
 
 for(let i=0; i<filterBtns.length;i++){
     filterBtns[i].addEventListener("click",()=>{
@@ -90,6 +91,7 @@ for(let i=0; i<filterBtns.length;i++){
         const filterValue=filterBtns[i].getAttribute("data-filter");
         
         for(let k=0;k<portfolioItems.length;k++){
+            portfolioItems=document.querySelectorAll('.portfolio-item');
             if(filterValue===portfolioItems[k].getAttribute("data-category")){
                 portfolioItems[k].classList.remove("hide");
                 portfolioItems[k].classList.add("show");
@@ -102,7 +104,10 @@ for(let i=0; i<filterBtns.length;i++){
                 portfolioItems[k].classList.remove("hide");
                 portfolioItems[k].classList.add("show");
             }
+            
         }
+        
+        
     })
 }
 
@@ -117,7 +122,11 @@ const lightboxLink=document.getElementById('lightbox-link');
 
 let itemIndex=0;
 
+
+
+
 for(let i=0;i<portfolioItems.length;i++){
+    
     portfolioItems[i].addEventListener("click",()=>{
         itemIndex=i;
         
@@ -159,6 +168,7 @@ const changeItem=()=>{
     lightboxText.innerHTML=portfolioItems[itemIndex].querySelector("p").innerHTML;
     lightboxCounter.textContent=`${itemIndex+1} / ${portfolioItems.length}`;
     link();
+    
 }
 
 lightbox.addEventListener('click',(e)=>{
