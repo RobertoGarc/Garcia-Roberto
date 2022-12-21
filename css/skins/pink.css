@@ -37,7 +37,8 @@ body.dark .portfolio .portfolio-filter button.active {
 .section-title h2::after,
 .aside .nav-toggler span,
 .aside .nav-toggler span::before,
-.aside .nav-toggler span::after {
+.aside .nav-toggler span::after,
+.badge {
   background-color: #ec1839;
 }
 

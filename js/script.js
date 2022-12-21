@@ -49,12 +49,15 @@ const updateNav=(e)=>{
 }
 
 const hireMe=document.getElementById('hire-me');
-const contactNav=document.getElementById('contact');
-hireMe.addEventListener('click',()=>{
-    const sectionIndex=hireMe.getAttribute("data-section-index");
-    showSection(hireMe);
-    updateNav(hireMe);
-});
+if(hireMe!=null){
+    const contactNav=document.getElementById('contact');
+    hireMe.addEventListener('click',()=>{
+        const sectionIndex=hireMe.getAttribute("data-section-index");
+        showSection(hireMe);
+        updateNav(hireMe);
+    });
+}
+
 
 /*ASIDE*/
 const navTogglerButton=document.getElementById('nav-toggler');
